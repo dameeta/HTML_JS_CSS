@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sample Array Example</title>
+    <script>
+        let myMap =new Map()
+        console.log(myMap)
+        let movieName = new Map([["Ramleela","Sanjay Bhansali"],["PK","Rajkumar Hirani"],["Taal","Subhash Ghai"]])
+        console.log(movieName);
+        movieName.set("Karma","Subhash Ghai");
+        console.log(movieName);
+        console.log(movieName.size);
+        console.log(movieName.get("Taal"));
+        movieName.delete("PK","Rajkumar Hirani");
+        console.log(movieName)
+        movieName.clear();
+        console.log(movieName);
+        let authors = ["Babasaheb Purandare","Othello","P.L.Deshpande"];
+        let maxbookauthor= authors.map(function(authors){
+
+            return authors + " the maximum books wrote"
+        });
+        console.log(maxbookauthor);
+
+</script>
+    </head>
+    <body>
+<h2 id="sample"></h2>
+    </body>
+    </html>

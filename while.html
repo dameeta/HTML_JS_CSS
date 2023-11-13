@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sample Javascript Example</title>
+    <script>
+var time = prompt("Enter any value for time in 24 hrs");
+var actualtime=time.length;
+while(actualtime!=5)
+{
+    alert("Enter any value for time in 24 hrs");
+    time=prompt("Enter time in 24 hr format");
+    actualtime=time.length;
+    if(actualtime===4)
+    {
+        break;
+    }
+}
+if(time>=1000&&time<1200)
+{
+    alert("good morning")
+}
+else if(time>=1200&&time<1600)
+{
+    alert("Good afternoon");
+}
+else if(time>=1600&&time<2000)
+{
+    alert("Good evening");
+}
+else{
+
+    alert("Good night");
+}
+
+
+ </script>
+    </head>
+    <body>
+<h2>This is while with time example</h2>
+    </body>
+    </html>

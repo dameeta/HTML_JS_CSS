@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sample Array Example</title>
+    <script>
+        
+function getAllElements(element,index)
+{
+colors += index + " = " + element + "<br>";
+document.write(colors);
+
+}
+let colors="";
+const allColors = ["red","blue","green","orange","pink"];
+allColors.forEach(getAllElements);
+document.getElementById("sample").innerHTML = colors;
+</script>
+    </head>
+    <body>
+<h2 id="sample"></h2>
+    </body>
+    </html>
